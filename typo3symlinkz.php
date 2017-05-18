@@ -18,13 +18,13 @@
      * @var string $typo3version replace with YOUR version src folder
      */
     $typo3version = 'typo3_src-4.2.8';
-    if (is_dir($typo3version)) 
+    if (is_dir($typo3version)) {
       symlink($typo3version, 'typo3_src');
     }
-    if (is_dir('typo3_src/typo3')) 
+    if (is_dir('typo3_src/typo3')) {
       symlink('typo3_src/typo3', 'typo3');
     }
-    if (is_dir('typo3_src/misc')) 
+    if (is_dir('typo3_src/misc')) {
       symlink('typo3_src/misc', 'misc');
     }
     if (is_dir('typo3_src/t3lib')) {
